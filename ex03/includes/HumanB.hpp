@@ -6,10 +6,11 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 16:44:10 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/07/30 21:16:21 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/02 00:58:09 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
 #include "Weapon.hpp"
 
 class HumanB
@@ -26,3 +27,4 @@ class HumanB
 	Weapon *_wep;
 	std::string	_name;
 };
+#endif

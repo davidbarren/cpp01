@@ -6,9 +6,11 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 16:39:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/07/30 21:14:22 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/02 00:59:09 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#ifndef HUMANA_HPP
+#define HUMANA_HPP
 #include "Weapon.hpp"
 class HumanA
 {
@@ -22,3 +24,4 @@ class HumanA
 	Weapon* _wep;
 	std::string	_name;
 };
+#endif

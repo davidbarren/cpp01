@@ -6,10 +6,11 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 13:54:46 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/07/30 15:19:12 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/02 00:57:14 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 #include <iostream>
 
 class Zombie
@@ -26,3 +27,4 @@ class Zombie
 };
 
 Zombie	*zombieHorde(int N, std::string name);
+#endif
