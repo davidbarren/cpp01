@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 23:07:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/07/31 00:56:03 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:58:38 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	Harl::complain_extra(std::string level)
 	}
 	switch (i) {
 		case 0:
-			std::cout << "[ WARNING ]" << std::endl;
+			std::cout << "[ DEBUG ]" << std::endl;
 			this->debug();
 			this->info();
 			this->warning();

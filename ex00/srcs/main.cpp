@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 13:59:33 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/07/30 14:58:25 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/07/31 15:09:10 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ int	main(void)
 	delete ptr;
 	//randomChump functionality
 	randomChump("david");
+	return 0;
 }

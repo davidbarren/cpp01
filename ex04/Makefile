@@ -6,11 +6,11 @@
 #    By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/26 03:46:13 by dbarrene          #+#    #+#              #
-#    Updated: 2024/07/30 21:35:33 by dbarrene         ###   ########.fr        #
+#    Updated: 2024/07/31 12:03:47 by dbarrene         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Regex
+NAME = better_sed
 
 COMP = c++
 
