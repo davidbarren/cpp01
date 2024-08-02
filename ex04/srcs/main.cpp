@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 21:25:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/08/02 18:27:28 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/02 18:28:00 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,3 @@ int	main(int argc, char **argv)
 		return 2;
 	}
 }
-
-/* Try to read the file one line at a time then parse it and
- * put it to the output file, prevents getting stuck when
- * the target string is a substring of the replacement string
- */
