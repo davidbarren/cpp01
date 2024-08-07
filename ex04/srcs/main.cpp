@@ -6,13 +6,13 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 21:25:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/08/01 16:54:29 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/07 15:45:14 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
-#include <filesystem>
+#include <sstream>
 
 int	main(int argc, char **argv)
 {
@@ -23,6 +23,7 @@ int	main(int argc, char **argv)
 	std::string buf;
 	std::string file;
 	size_t	targetindex = 1;
+	std::ostringstream contents;
 	if (argc != 4){
 		std::cout << "Incorrect usage: Please include filename, target" 
 			<< " string and replacement string" << std::endl;
@@ -31,23 +32,24 @@ int	main(int argc, char **argv)
 	infile = argv[1];
 	target = argv[2];
 	rep = argv[3];
-	std::ifstream input;
+	std::fstream input(infile);
+
 	input.open(infile);
 	if (input.is_open())
 	{
-		while (!input.eof()){
-			getline(input, buf);
-			file.append(buf + "\n");
-		}
+		contents << input.rdbuf();
 		input.close();
+		file = contents.str();
 	}
-	else{
+	else
+	{
 		std::cout << "failed to open input file, please make"<<
 			" sure that it exists and has correct permissions" << std::endl;
 		return 1;
 		}
-	file = file.substr(0, file.length() - 1);
-	while (targetindex)
+	std::cout << "contents of file " << file << std::endl;
+	std::cout << "contents of rep " << rep << std::endl;
+	while (targetindex && !target.empty())
 	{
 		targetindex = file.find(target);
 		if (targetindex > file.length())
