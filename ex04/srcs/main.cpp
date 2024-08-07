@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 21:25:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/08/07 17:25:10 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/07 17:30:30 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	main(int argc, char **argv)
 			" sure that it exists and has correct permissions" << std::endl;
 		return 1;
 		}
-	while (targetindex && !target.empty())
+	while (42 && !target.empty())
 	{
 		targetindex = file.find(target, targetindex);
 		if (targetindex > file.length())
