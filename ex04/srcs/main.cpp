@@ -6,7 +6,7 @@
 /*   By: dbarrene <dbarrene@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 21:25:26 by dbarrene          #+#    #+#             */
-/*   Updated: 2024/08/07 17:30:30 by dbarrene         ###   ########.fr       */
+/*   Updated: 2024/08/07 17:32:12 by dbarrene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	main(int argc, char **argv)
 	std::string outfile;
 	std::string target;
 	std::string rep;
-	std::string buf;
 	std::string file;
 	std::ostringstream contents;
 	size_t	targetindex = 0;
@@ -33,8 +32,8 @@ int	main(int argc, char **argv)
 	infile = argv[1];
 	target = argv[2];
 	rep = argv[3];
-	std::fstream input(infile);
 
+	std::fstream input;
 	input.open(infile);
 	if (input.is_open())
 	{
@@ -60,6 +59,7 @@ int	main(int argc, char **argv)
 	std::ofstream output(infile + ".replace");
 	if (output.is_open()){
 		output << file;
+		output.close();
 	}
 	else
 	{
